@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/launcher_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mercury"
+        android:layout_below="@id/saturn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Colision"
+        android:textColor="#ef5350"
+        android:textSize="55dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_toLeftOf="@id/saturn"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView android:id="@+id/midStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_below="@id/saturn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView android:id="@+id/nxtstar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_below="@id/midStar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="80dp"/>
+
+    <ImageView android:id="@+id/mrcryStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_below="@id/nxtstar"
+        android:layout_toRightOf="@id/mercury"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp" />
+
+    <ImageView android:id="@+id/meteorStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_below="@id/mrcryStar"
+        android:layout_toRightOf="@id/mercury"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_toLeftOf="@id/playBtn"
+        android:layout_alignBottom="@id/playBtn"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_toRightOf="@id/playBtn"
+        android:layout_alignBottom="@id/playBtn"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="130dp"/>
+
+    <ImageView android:id="@+id/mercury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mercury"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView android:id="@+id/saturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saturn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/meteor"
+        android:layout_above="@id/playBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="140dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/comet"
+        android:layout_above="@id/playBtn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="80dp"/>
+
+    <Button android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Play with Bot"
+        android:layout_marginBottom="60dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:letterSpacing=".2"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"/>
+</RelativeLayout>
